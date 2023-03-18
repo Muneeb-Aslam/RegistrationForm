@@ -4,8 +4,12 @@ import SignIn from './components/signin'
 import './App.css'
 
 function App() {
-  return (  
-    <SignUp />
+  const [currentform ,setcurrentform]=React.useState("register")
+  function toggleForm(FormSwitch){
+    setcurrentform(FormSwitch)
+  }
+  return (    
+    currentform==="register"? <SignUp onFormSwitch={toggleForm}/> : <SignIn onFormSwitch={toggleForm}/>
   )
 }
 

@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
 }
-.signup{
+.signup,.signin{
   color: #32403B;
   padding: 1rem 0rem;
   height: 60%;
@@ -25,11 +25,11 @@
   border-radius: 49.0901px;
 
 }
-.signup h3{
+.signup h3,.signin h3{
   background: inherit;
   font-size: 2rem;
 }
-.signup input{
+.signup input,.signin input{
   outline: none;
   padding-left: 20px;
   width: 90%;
@@ -38,7 +38,8 @@
   border: 1.53407px solid rgba(0, 0, 0, 0.1);
   border-radius: 15.3407px;
 }
-.signup button{
+.signup > button,.signin > button{
+  cursor: pointer;
   font-size: 1rem;
   border: none;
   width: 60%;
@@ -48,13 +49,14 @@
   background: #84C7AE;
   border-radius: 23.011px;
 }
-.signup .signin{
+.signup .Account,.signin .No-account{
   background: inherit;
   text-align: center;
   color: #32403B;
   font-size: .8rem;
 }
-.signup a{
+.signup span,.signin span{
+  cursor: pointer;
   color: inherit;
   background: inherit;
   text-decoration: none;
