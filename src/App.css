@@ -25,6 +25,9 @@
   border-radius: 49.0901px;
 
 }
+.signin{
+  height: 50%;
+}
 .message{
   padding-left: 2rem;
   background: inherit;
@@ -44,6 +47,9 @@
   background: #FFFFFF;
   border: 1.53407px solid rgba(0, 0, 0, 0.1);
   border-radius: 15.3407px;
+}
+.signin input{
+  height: 15%;
 }
 .signup > button,.signin > button{
   cursor: pointer;
