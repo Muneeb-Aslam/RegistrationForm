@@ -6,7 +6,9 @@ import './App.css'
 function App() {
   const [currentform ,setcurrentform]=React.useState("register")
   function toggleForm(FormSwitch){
-    setcurrentform(FormSwitch)
+    return setcurrentform(
+      FormSwitch  
+    )
   }
   return (    
     currentform==="register"? <SignUp onFormSwitch={toggleForm}/> : <SignIn onFormSwitch={toggleForm}/>

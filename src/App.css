@@ -25,9 +25,16 @@
   border-radius: 49.0901px;
 
 }
+.message{
+  padding-left: 2rem;
+  background: inherit;
+  align-self: flex-start;
+  color: red;
+  font-size: .8rem;
+}
 .signup h3,.signin h3{
   background: inherit;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .signup input,.signin input{
   outline: none;
@@ -60,4 +67,20 @@
   color: inherit;
   background: inherit;
   text-decoration: none;
+}
+@media (max-width:480px){
+  .signin,.signup{
+    height: 50%;
+    width: 80%;
+  }
+}
+@media (max-width:850px) {
+  .signin,.signup{
+    height: 50%;
+    width: 70%;
+  }
+  .signup h3,.signin h3{
+    background: inherit;
+    font-size: 1rem;
+  }
 }
